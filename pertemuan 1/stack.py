@@ -22,4 +22,4 @@ print("isEmpty: ", isEmpty)
 # Size
 print("Size :", len(stack))
 
-#Python
+# Python
