@@ -32,16 +32,13 @@ print("Size: ", len(queue))
 
 ## Penjelasan Kode Program
 
-1. Inisialisasi Queue: 
-   Membuat sebuah list kosong yang akan berfungsi sebagai antrian:
+1. Inisialisasi Queue berfungsi untuk Membuat sebuah list kosong yang akan berfungsi sebagai antrian, Pada tahap awal, queue belum memiliki elemen apa pun sehingga masih kosong:
 
    ```python
    queue = []
    ```
 
-2. Enqueue (Menambah Data): 
-   Menambahkan elemen ke dalam antrian ke paling belakang menggunakan `append()`
-
+2. Enqueue (Menambah Data) berfungsi untuk Menambahkan elemen ke dalam antrian ke paling belakang menggunakan `append()` 
    ```python
    queue.append('A')
    queue.append('B')
@@ -50,8 +47,7 @@ print("Size: ", len(queue))
 
    Setelah bagian ini, isi antrian: `['A', 'B', 'C']`.
 
-3. Dequeue (Menghapus Data Terdepan): 
-   Menghapus elemen pertama atau data terdepan dengan `pop(0)`
+3. Dequeue (Menghapus Data Terdepan) berfungsi untuk Menghapus elemen pertama atau data terdepan dengan `pop(0)`
 
    ```python
    element = queue.pop(0)
