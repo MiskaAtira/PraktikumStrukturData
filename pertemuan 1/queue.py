@@ -1,4 +1,4 @@
-# Creating queue and Queue Operations
+# Creating Queue and Queue Operations
 queue = []
 
 # Enqueue
