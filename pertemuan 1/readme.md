@@ -197,12 +197,13 @@ Size : 2
 
 ## Kesimpulan
 
-* Stack merupakan struktur data yang bekerja dengan aturan LIFO (Last In First Out), di mana elemen terakhir yang masuk adalah yang lebih dulu dikeluarkan.
+* Stack merupakan struktur data yang bekerja dengan aturan LIFO (Last In First Out), di mana elemen terakhir yang masuk adalah yang lebih dulu dikeluarkan. Stack mempermudah pengelolaan data yang harus diproses secara terbalik dari urutan masuknya. Dengan prinsip LIFO, struktur ini sangat berguna pada fitur seperti undo/redo, penanganan fungsi dalam pemrograman (call stack), dan penyimpanan data sementara yang membutuhkan akses cepat pada elemen paling atas.
 * Operasi utama pada stack meliputi:
 
   * `append()` → menambah data (push)
   * `pop()` → menghapus data teratas (pop)
   * `stack[-1]` → melihat data paling atas (peek)
-* Stack umumnya digunakan untuk proses seperti riwayat undo, penyimpanan sementara, atau mekanisme pemanggilan fungsi (call stack).
+
+
 
 
