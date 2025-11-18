@@ -144,37 +144,32 @@ print("Size :", len(stack))
 
    Setelah proses tersebut, isi stack menjadi: `['A', 'B', 'C']`.
    
-3. Print (Menampilkan Isi Stack)
+3. Print (Menampilkan Isi Stack) Menampilkan isi seluruh stack saat ini. Hasilnya membantu mengetahui susunan elemen sebelum dilakukan operasi berikutnya.
 
-   ```print("Stack: ", stack)
+   ```python
+   print("Stack: ", stack)
    ```
-   Menampilkan isi seluruh stack saat ini. Hasilnya membantu mengetahui susunan elemen sebelum dilakukan operasi berikutnya.
+  
+4. Pop (Mengambil Data Teratas) berfungsi untuk menghapus dan mengambil elemen paling atas dengan `pop()`, Elemen `'C'` yang terakhir dimasukkan adalah yang pertama keluar, karena stack metodenya Last in First Out
 
-4. Pop (Mengambil Data Teratas)
-   Menghapus dan mengambil elemen paling atas dengan `pop()`:
 
    ```python
    element = stack.pop()
    ```
 
-   Elemen `'C'` yang terakhir dimasukkan adalah yang pertama keluar.
-
-5. Peek (Melihat Data Teratas)
-   Mengecek elemen paling atas tanpa menghilangkannya:
+5. Peek (Melihat Data Teratas) berfungsi untuk mengecek elemen paling atas tanpa menghilangkannya, Karena 'C' sudah di-pop, kini elemen teratas adalah 'B'.
 
    ```python
    topElement = stack[-1]
    ```
 
-6. isEmpty (Memeriksa Kondisi Stack)
-   Mengecek apakah tumpukan masih berisi elemen atau tidak:
+6. isEmpty (Memeriksa Kondisi Stack) berfungsi untuk mengecek apakah tumpukan masih berisi elemen atau tidak, Jika stack kosong → True dan jika stack berisi elemen → False. Karena stack masih berisi 'A' dan 'B', hasilnya adalah False.
 
    ```python
    isEmpty = not bool(stack)
    ```
 
-7. Size (Menghitung Jumlah Elemen)
-   Mengetahui berapa banyak elemen yang ada di dalam stack:
+7. Size (Menghitung Jumlah Elemen) berfungsi untuk mengetahui berapa banyak elemen yang ada di dalam stack:
 
    ```python
    len(stack)
