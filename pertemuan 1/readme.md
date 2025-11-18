@@ -38,16 +38,14 @@ print("Size: ", len(queue))
    queue = []
    ```
 
-2. Enqueue (Menambah Data) berfungsi untuk Menambahkan elemen ke dalam antrian ke paling belakang menggunakan `append()` 
+2. Enqueue (Menambah Data) berfungsi untuk Menambahkan elemen ke dalam antrian ke paling belakang menggunakan `append()`, disini A menjadi paling depan dan C menjadi bagian paling belakang.
    ```python
    queue.append('A')
    queue.append('B')
    queue.append('C')
    ```
 
-   Setelah bagian ini, isi antrian: `['A', 'B', 'C']`.
-
-3. Dequeue (Menghapus Data Terdepan) berfungsi untuk Menghapus elemen pertama atau data terdepan dengan `pop(0)`
+3. Dequeue (Menghapus Data Terdepan) berfungsi untuk Menghapus elemen pertama atau data terdepan dengan `pop(0)`. Karena queue menggunakan konsep FIFO, elemen pertama yang masuk adalah elemen yang pertama dikeluarkan.
 
    ```python
    element = queue.pop(0)
@@ -55,28 +53,25 @@ print("Size: ", len(queue))
 
    Elemen `'A'` keluar dari antrian.
 
-4. Peek (Melihat Elemen Terdepan): 
-   Melihat elemen yang paling depan tanpa menghapus elemen tersebut 
+4. Peek (Melihat Elemen Terdepan) berfungsi untuk Melihat elemen yang paling depan tanpa menghapus elemen tersebut. Karena 'A' sudah keluar, elemen terdepan sekarang adalah 'B'.
 
    ```python
    frontElement = queue[0]
    ```
 
-5. isEmpty (Cek Kosong atau Tidak): 
-   Mengecek apakah antrian kosong
+5. isEmpty (Cek Kosong atau Tidak) berfungsi untuk Mengecek apakah antrian kosong. Jika queue kosong → hasilnya True, dan jika masih ada data → hasilnya False.
 
    ```python
    isEmpty = not bool(queue)
    ```
 
-6. Size (Jumlah Elemen):
-   Menghitung banyaknya elemen yang ada didalamnya
+6. Size (Jumlah Elemen) berfungsi untuk Menghitung banyaknya elemen yang ada didalamnya
 
    ```python
    len(queue)
    ```
 
-## Hasil Output yang akan keluar
+## Hasil Output
 
 ```
 Queue:  ['A', 'B', 'C']
@@ -133,15 +128,13 @@ print("Size :", len(stack))
 
 ## Penjelasan
 
-1. Membuat Stack
-   Bagian ini membuat list kosong yang akan digunakan sebagai struktur tumpukan:
+1. Membuat Stack: Bagian ini membuat sebuah list kosong yang akan berfungsi sebagai tumpukan. Pada tahap awal, stack belum memiliki elemen apa pun sehingga masih kosong.
 
    ```python
    stack = []
    ```
 
-2. Push (Menambahkan Data)
-   Elemen baru dimasukkan ke bagian paling atas tumpukan menggunakan `append()`:
+2. Push (Menambahkan Data) : Elemen baru dimasukkan ke bagian paling atas tumpukan menggunakan `append()` dengan menambahkannya ke bagian paling atas
 
    ```python
    stack.append('A')
@@ -150,8 +143,14 @@ print("Size :", len(stack))
    ```
 
    Setelah proses tersebut, isi stack menjadi: `['A', 'B', 'C']`.
+   
+3. Print (Menampilkan Isi Stack)
 
-3. Pop (Mengambil Data Teratas)
+   ```print("Stack: ", stack)
+   ```
+   Menampilkan isi seluruh stack saat ini. Hasilnya membantu mengetahui susunan elemen sebelum dilakukan operasi berikutnya.
+
+4. Pop (Mengambil Data Teratas)
    Menghapus dan mengambil elemen paling atas dengan `pop()`:
 
    ```python
@@ -160,21 +159,21 @@ print("Size :", len(stack))
 
    Elemen `'C'` yang terakhir dimasukkan adalah yang pertama keluar.
 
-4. Peek (Melihat Data Teratas)
+5. Peek (Melihat Data Teratas)
    Mengecek elemen paling atas tanpa menghilangkannya:
 
    ```python
    topElement = stack[-1]
    ```
 
-5. isEmpty (Memeriksa Kondisi Stack)
+6. isEmpty (Memeriksa Kondisi Stack)
    Mengecek apakah tumpukan masih berisi elemen atau tidak:
 
    ```python
    isEmpty = not bool(stack)
    ```
 
-6. Size (Menghitung Jumlah Elemen)
+7. Size (Menghitung Jumlah Elemen)
    Mengetahui berapa banyak elemen yang ada di dalam stack:
 
    ```python
