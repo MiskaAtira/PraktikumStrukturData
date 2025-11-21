@@ -1,4 +1,7 @@
-#  Penjelasan fungsi fungsi
+#  Penjelasan
+
+## Linked List
+Linked List itu adalah struktur data yang menyimpan data dalam bentuk rangkaian node yang saling terhubung. Setiap node berisi dua hal: data dan pointer/referensi yang menunjuk ke node berikutnya. Jadi, bentuknya seperti rantai yang tersusun dari banyak mata rantai.
 
 ## 1. Class Node
 Fungsi ini dipakai untuk membuat satu elemen dalam linked list. Di dalam node ada dua bagian: data yang ingin disimpan dan penunjuk (next) yang mengarah ke node berikutnya. Jadi Node itu seperti “kotak” yang menyimpan data dan arah kemana harus lanjut.
